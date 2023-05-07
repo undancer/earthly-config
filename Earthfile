@@ -17,6 +17,7 @@ luet:
 
 run:
   FROM earthly/dind:${FLAVOR}
+  COPY +luet/luet /usr/bin/luet
   WORKDIR /packages
   COPY ./packages /packages
   WITH DOCKER
