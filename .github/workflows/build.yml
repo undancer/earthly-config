@@ -48,6 +48,11 @@ jobs:
       #   run: earthly github.com/earthly/hello-world:main+hello
       - name: run in earthly
         run: earthly --allow-privileged +run
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist-only-yaml
+          path: |
+            dist/*.yaml
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
