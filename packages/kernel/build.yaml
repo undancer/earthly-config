@@ -3,12 +3,13 @@ requires:
     category: "system"
     version: ">=0"
 
-# excludes:
-#   - ^/boot/grub2
-#   - ^/boot/initrd
+excludes:
+  - ^/boot/grub2
+  - ^/boot/initrd
 includes:
   - ^/boot|^/boot/.*
   - ^/lib/modules|^/lib/modules.*
+  - ^/usr/lib/modules|^/usr/lib/modules.*
 
 {{ if eq .Values.distribution "ubuntu" }}
 env:
