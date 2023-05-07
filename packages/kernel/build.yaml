@@ -1,0 +1,6 @@
+requires:
+  - name: "base"
+    category: "system"
+    version: ">=0"
+
+unpack: true
