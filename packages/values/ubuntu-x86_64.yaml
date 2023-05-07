@@ -1,1 +1,9 @@
 image: "library/ubuntu:lunar"
+distribution: "ubuntu"
+
+packages: >-
+  curl
+  wget
+  binutils
+  coreutils
+  busybox
