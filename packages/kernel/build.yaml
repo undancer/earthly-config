@@ -3,8 +3,9 @@ requires:
     category: "system"
     version: ">=0"
 
-
-
+# excludes:
+#   - ^/boot/grub2
+#   - ^/boot/initrd
 includes:
   - ^/boot|^/boot/.*
   - ^/lib/modules|^/lib/modules.*

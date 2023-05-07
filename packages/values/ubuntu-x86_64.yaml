@@ -6,6 +6,14 @@ packages: >-
   wget
   binutils
   coreutils
+  debianutils
   busybox
+  dracut
+  dracut-live
+  grub-efi-amd64-bin
+  grub-pc-bin
+  grub2
+  grub2-common
+  rsync
 
 kernel_package: linux-image-generic
