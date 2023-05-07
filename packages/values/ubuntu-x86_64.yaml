@@ -2,18 +2,42 @@ image: "library/ubuntu:lunar"
 distribution: "ubuntu"
 
 packages: >-
-  curl
-  wget
   binutils
-  coreutils
-  debianutils
   busybox
+  coreutils
+  curl
+  debianutils
+  dosfstools
   dracut
   dracut-live
+  dracut-network
+  e2fsprogs
+  gawk
+  gnupg
   grub-efi-amd64-bin
   grub-pc-bin
   grub2
   grub2-common
+  haveged
+  iproute2
+  lvm2
+  mdadm
+  multipath-tools
+  nano
+  network-manager
+  openssl
+  parted
+  pigz
   rsync
+  shim
+  software-properties-common
+  squashfs-tools
+  ssh
+  systemd
+  tar
+  tree
+  udev
+  wget
+  zstd
 
 kernel_package: linux-image-generic

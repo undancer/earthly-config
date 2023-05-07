@@ -20,8 +20,12 @@ run:
   COPY +luet/luet /usr/bin/luet
   WORKDIR /packages
   COPY ./packages /packages
+  RUN luet --help
   WITH DOCKER
     RUN values="${FLAVOR}-$(uname -m)" \
-        && luet build --values ./values/${values}.yaml system/kernel
+        # && target="system/kernel" \
+        && target="system/initramfs" \
+        && luet build --values ./values/${values}.yaml \
+        ${target}
   END
   SAVE ARTIFACT ./build/* AS LOCAL ./dist/
