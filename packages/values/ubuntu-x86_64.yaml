@@ -7,3 +7,5 @@ packages: >-
   binutils
   coreutils
   busybox
+
+kernel_package: linux-image-generic

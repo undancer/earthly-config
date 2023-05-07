@@ -3,4 +3,20 @@ requires:
     category: "system"
     version: ">=0"
 
+
+{{ if eq .Values.distribution "ubuntu" }}
+env:
+  - DEBIAN_FRONTEND=noninteractive
+steps:
+  - |
+    set -x \
+    && apt-get --assume-yes update \
+    && apt-get --assume-yes upgrade \
+    && apt-get --assume-yes install --no-install-recommends \
+    {{ .Values.kernel_package }} \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+{{ end }}
+
+
 unpack: true
