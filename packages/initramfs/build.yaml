@@ -3,10 +3,14 @@ requires:
     category: "system"
     version: ">=0"
 
+# excludes:
+#   - ^/boot/grub2
+#   - ^/boot/initrd
 includes:
-  - ^/boot|^/boot/initrd.*
+  # - ^/boot|^/boot/.*
+  - ^/boot/initrd.*
 prelude:
-  - rm -rf /boot/initrd || true
+  - rm -rf /boot/initrd* || true
 steps:
   - |
     kernel=$(ls /lib/modules | head -n1) && \
