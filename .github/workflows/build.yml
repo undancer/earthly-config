@@ -38,8 +38,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: Docker login # to avoid dockerhub rate-limiting
-        run: docker login --username "${{ secrets.DOCKERHUB_USERNAME }}" --password "${{ secrets.DOCKERHUB_PASSWORD }}"
+      # - name: Docker login # to avoid dockerhub rate-limiting
+      #   run: docker login --username "${{ secrets.DOCKERHUB_USERNAME }}" --password "${{ secrets.DOCKERHUB_PASSWORD }}"
       - name: what version is installed?
         run: earthly --version
       - name: run the earthly hello world
