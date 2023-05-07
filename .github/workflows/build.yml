@@ -37,6 +37,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo $(uname -m)
+          echo earthly +run
 
       # - name: Docker login # to avoid dockerhub rate-limiting
       #   run: docker login --username "${{ secrets.DOCKERHUB_USERNAME }}" --password "${{ secrets.DOCKERHUB_PASSWORD }}"
