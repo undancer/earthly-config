@@ -8,4 +8,4 @@ packages: >-
   coreutils
   busybox
 
-kernel_package: linux-image-generic
+kernel_package: linux-image-generic={{ .Values.version }}
