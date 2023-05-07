@@ -24,4 +24,4 @@ run:
     RUN values="${FLAVOR}-$(uname -m)" \
         && luet build --values ./values/${values}.yaml system/kernel
   END
-  SAVE ARTIFACT ./build/* AS LOCAL ./output/
+  SAVE ARTIFACT ./build/* AS LOCAL ./dist/
