@@ -24,7 +24,8 @@
 				"GreatMinds.gitflow4code",
 				"golang.Go",
 				"redhat.vscode-yaml",
-				"earthly.earthfile-syntax-highlighting"
+				"earthly.earthfile-syntax-highlighting",
+				"ms-vscode-remote.remote-containers"
 			]
 		}
 	}
