@@ -1,0 +1,6 @@
+requires:
+  - name: "initramfs"
+    category: "system"
+    version: ">=0"
+
+unpack: true

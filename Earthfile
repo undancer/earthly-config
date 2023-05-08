@@ -24,7 +24,8 @@ run:
   WITH DOCKER
     RUN values="${FLAVOR}-$(uname -m)" \
         # && target="system/kernel" \
-        && target="system/initramfs" \
+        # && target="system/initramfs" \
+        && target="system/os" \
         && luet build --values ./values/${values}.yaml \
         ${target}
   END
