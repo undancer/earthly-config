@@ -15,6 +15,7 @@
 				"GitHub.codespaces",
 				"github.vscode-github-actions",
 				"eamodio.gitlens",
+				"GreatMinds.gitflow4code",
 				"golang.Go",
 				"redhat.vscode-yaml",
 				"earthly.earthfile-syntax-highlighting"
