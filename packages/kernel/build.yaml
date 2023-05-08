@@ -4,6 +4,7 @@ requires:
     version: ">=0"
 
 excludes:
+  - ^/boot/grub
   - ^/boot/grub2
   - ^/boot/initrd
 includes:
