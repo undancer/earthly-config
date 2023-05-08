@@ -12,6 +12,7 @@
 		"vscode": {
 			"extensions": [
 				"MS-CEINTL.vscode-language-pack-zh-hans",
+				"GitHub.codespaces",
 				"github.vscode-github-actions",
 				"eamodio.gitlens",
 				"golang.Go",
